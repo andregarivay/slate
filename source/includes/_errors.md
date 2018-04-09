@@ -1,22 +1,23 @@
 # Errors
 
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-The Kittn API uses the following error codes:
+The PaymentSpring API uses the following error codes:
 
 
-Error Code | Meaning
+Error Code | Message
 ---------- | -------
-400 | Bad Request -- Your request is invalid.
-401 | Unauthorized -- Your API key is wrong.
-403 | Forbidden -- The kitten requested is hidden for administrators only.
-404 | Not Found -- The specified kitten could not be found.
-405 | Method Not Allowed -- You tried to access a kitten with an invalid method.
-406 | Not Acceptable -- You requested a format that isn't json.
-410 | Gone -- The kitten requested has been removed from our servers.
-418 | I'm a teapot.
-429 | Too Many Requests -- You're requesting too many kittens! Slow down!
-500 | Internal Server Error -- We had a problem with our server. Try again later.
-503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
+11112 | Invalid card number or improper format.
+11301 | Invalid Visa number.
+11303 | Invalid American Express number.
+11306 | Invalid Discover number.
+11305 | Invalid Diners Club number.
+11302 | Invalid Mastercard number.
+38501 | Amount must be sent as a number of cents greater than zero.
+234722 | Card security code (also called CVV on some cards) is either missing or invalid.
+882719 | The token you specified could not be found.
+11102 | Card type is invalid. Possible options include Visa, Mastercard, AMEX, Discover or Diners Club Card.
+11102 | Card number is invalid.
+81609 | Please use the two-character state abbreviation.
+11110 | Improperly formatted date.
+11112 | Missing expiration date and/or month.
+81609 | Customer email is invalid.
+17001 | Could not find the specified customer.
